@@ -70,6 +70,30 @@ nav {
   transition: opacity 0.2s;
 }
 .cta-button:hover { opacity: 0.9; text-decoration: none; }
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.cta-section .store-links { justify-content: center; }
+.store-badge {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.store-badge img {
+  display: block;
+  width: auto;
+  height: 40px;
+}
+.store-badge.google-play-badge img { height: 60px; }
+.store-badge:hover {
+  opacity: 0.85;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
 
 /* ── Features ── */
 .features {
