@@ -144,6 +144,12 @@ details p {
   margin-bottom: 16px;
 }
 .privacy-page li { margin-bottom: 8px; font-size: 14px; }
+.privacy-page p {
+  color: #999;
+  margin-bottom: 16px;
+}
+.privacy-page strong { color: #E5E5E5; }
+.deletion-button { margin: 8px 0 16px; }
 
 /* ── Footer ── */
 footer {
@@ -163,9 +169,13 @@ footer {
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
+  nav { padding: 16px 20px; align-items: flex-start; }
+  .nav-logo { height: 64px; }
+  .nav-links { gap: 8px 16px; flex-wrap: wrap; justify-content: flex-end; }
   .hero { flex-direction: column; text-align: center; margin: 40px auto; }
   .hero-text h1 { font-size: 36px; }
   .hero-text p { margin: 0 auto 24px; }
   .features { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 12px; text-align: center; }
+  .footer-links { flex-wrap: wrap; justify-content: center; }
 }
